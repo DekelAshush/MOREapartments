@@ -1,0 +1,152 @@
+{
+  "Metadata": {
+    "title": "MORE Apartments",
+    "description": "Premium vacation properties and hotel-style stays. Browse our listings and book your next getaway."
+  },
+  "Navigation": {
+    "home": "Home",
+    "properties": "Properties",
+    "aboutUs": "About us",
+    "contact": "Contact",
+    "bookNow": "Book now",
+    "switchToHebrew": "עברית",
+    "switchToEnglish": "English",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
+  },
+  "Home": {
+    "welcomeTitle": "Welcome to MORE Guest Apartments in Be'er Sheva",
+    "introParagraphs": [
+      "We offer a variety of renovated, furnished, and fully equipped apartments located near Soroka Medical Center, Ben-Gurion University, and Writers' Park.",
+      "The apartments are available for nightly and short-term rental.",
+      "In every apartment you can enjoy free Wi-Fi, a flat-screen TV with Netflix, air conditioning in every room, a bedroom with a spacious bed, a private shower and toilet, and a kitchenette with facilities for preparing hot drinks.",
+      "All apartments include free parking on a space-available basis.",
+      "In some apartments you will enjoy a spacious and pleasant balcony or a garden with grass and a coffee corner.",
+      "Check-in is self-service using a key waiting for you in a lockbox.",
+      "After booking, you will receive detailed instructions including the lockbox code."
+    ],
+    "hostingPolicyTitle": "House Rules",
+    "hostingPolicyItems": [
+      "Check-in from 15:00",
+      "Check-out by 11:00",
+      "Check-out by 13:00 with prior coordination and an additional fee of ₪100",
+      "Check-out after 13:00 will be charged as an additional night",
+      "Saturday night check-out based on space availability, or by prior arrangement with an additional charge of half the nightly rate",
+      "Smoking is strictly prohibited in the apartments, except in designated areas",
+      "No additional guests beyond the booked number",
+      "No pets if the booking was made through external booking platforms"
+    ],
+    "cancellationPolicyTitle": "Cancellation Policy",
+    "cancellationPolicyItems": [
+      "Cancellation is permitted up to 7 days before arrival at no charge",
+      "Cancellations less than 7 days before arrival will be charged in full",
+      "If the booking was made less than 7 days before arrival, the guest may cancel within 24 hours at no charge; after that, full payment applies"
+    ],
+    "viewProperties": "View Properties",
+    "bookNow": "Book Now",
+    "heroAlt": "MORE Apartments",
+    "trustLine": "Trusted hospitality for short and extended stays"
+  },
+  "Properties": {
+    "title": "Our Properties",
+    "subtitle": "Find the perfect stay for your trip",
+    "description": "Each address offers one or more fully equipped apartments. Browse photos by property and apartment number.",
+    "listTitle": "Available Properties",
+    "filterAll": "All addresses",
+    "filterByUnits": "{count} apartments",
+    "unitsBadge": "{count} apartments",
+    "addressSummary": "{count, plural, one {# apartment at this address} other {# apartments at this address}}",
+    "classification": {
+      "2": "Dual property",
+      "3": "Triple property",
+      "4": "Quad property"
+    },
+    "apartmentNumber": "Apartment {number}",
+    "apartmentNamed": "Apartment {number} — {label}",
+    "apartmentLabels": {
+      "balcony": "Balcony",
+      "bombshelter": "Safe room",
+      "garden": "Garden"
+    },
+    "photoCount": "{count} photos",
+    "viewPhoto": "View photo",
+    "bookProperty": "Book",
+    "city": "Be'er Sheva",
+    "addressWithCity": "{address}, {city}",
+    "addressTabs": {
+      "hanoter-26": "5 min from Soroka",
+      "negba-21": "Old City",
+      "ramkhal-4": "Alapark",
+      "wingate-70": "1 min from Soroka"
+    },
+    "addresses": {
+      "hanoter-26": "HaNoter 26",
+      "negba-21": "Negba 21",
+      "ramkhal-4": "Ramkhal 4",
+      "wingate-70": "Wingate 70"
+    },
+    "availabilityTitle": "Check availability",
+    "checkIn": "Check-in",
+    "checkOut": "Check-out",
+    "guests": "Guests",
+    "checkAvailability": "Check availability",
+    "checking": "Checking availability...",
+    "availableForDates": "This apartment is available for your dates",
+    "notAvailable": "Not available for your selected dates",
+    "priceForStay": "Price for stay: {price} {currency}",
+    "availabilityRequestFailed": "Could not check availability right now. Please try again or contact us on WhatsApp.",
+    "invalidDates": "Please choose valid check-in and check-out dates (check-out must be after check-in).",
+    "availabilityNotLinked": "Availability check is not set up for this apartment yet. Please contact us on WhatsApp.",
+    "availabilityErrors": {
+      "400": "The number of guests exceeds this apartment's capacity.",
+      "401": "The stay is too short for your selected dates.",
+      "402": "Your chosen check-in day is not available.",
+      "403": "This booking is too soon — please book further in advance.",
+      "404": "More time is required between bookings."
+    }
+  },
+  "About": {
+    "title": "About Us",
+    "subtitle": "Hospitality built on care and quality",
+    "introduction": "We are a local hospitality team dedicated to offering exceptional stays in beautifully maintained properties.",
+    "storyTitle": "Our Story",
+    "storyContent": "What started as a single apartment has grown into a curated collection of properties for travelers who value comfort, location, and personal service. We believe every guest deserves a warm welcome and a space that feels truly theirs.",
+    "approachTitle": "Our Approach",
+    "approachContent": "From check-in to check-out, we focus on clear communication, spotless spaces, and thoughtful details. Every property is inspected and prepared with the same standards we would expect for our own guests.",
+    "credentialsTitle": "Why Choose Us",
+    "credentialsContent": "Prime locations, transparent pricing, flexible stays, and responsive support via WhatsApp. We combine hotel-level service with the freedom and privacy of your own apartment.",
+    "ctaTitle": "Ready to book your stay?",
+    "ctaBody": "Tell us your dates and preferences — we will help you find the right property.",
+    "ctaButton": "Book Now"
+  },
+  "Contact": {
+    "title": "Contact Us",
+    "body": "Have a question before you book? Reach out — we are happy to help.",
+    "emailLabel": "Email",
+    "email": "info@moreapartments.com",
+    "phoneLabel": "Phone",
+    "phone": "+972-50-000-0000",
+    "addressLabel": "Address",
+    "address": "Tel Aviv, Israel",
+    "trustLine": "We typically respond within a few hours"
+  },
+  "BookNow": {
+    "title": "Book Now",
+    "body": "Fill out the form below with your details and preferred property. We will confirm availability on WhatsApp.",
+    "trustLine": "Fast, personal booking assistance"
+  },
+  "WhatsAppForm": {
+    "heading": "Booking inquiry via WhatsApp",
+    "floatingCta": "Book now",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "phone": "Phone number",
+    "service": "Property / dates",
+    "servicePlaceholder": "e.g. Sea View Suite, 12–15 June, 2 guests",
+    "submit": "Send on WhatsApp",
+    "required": "This field is required",
+    "invalidPhone": "Enter a valid Israeli phone number (e.g. 0512345678)",
+    "success": "Message sent",
+    "error": "Error sending message"
+  }
+}
