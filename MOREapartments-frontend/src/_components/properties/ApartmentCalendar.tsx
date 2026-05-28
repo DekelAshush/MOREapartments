@@ -190,17 +190,18 @@ function ApartmentCalendar({ apartmentId, onSelectDate, selectedDate }: Props) {
             return <div key={`empty-${index}`} className="aspect-square" />;
           }
 
-          const dayInfo = dayMap.get(cell.date);
-          const isPast = cell.date < today;
+          const cellDate = cell.date;
+          const dayInfo = dayMap.get(cellDate);
+          const isPast = cellDate < today;
           const isAvailable = dayInfo?.available === true;
-          const isSelected = selectedDate === cell.date;
+          const isSelected = selectedDate === cellDate;
 
           return (
             <button
-              key={cell.date}
+              key={cellDate}
               type="button"
               disabled={isPast || !isAvailable}
-              onClick={() => onSelectDate?.(cell.date)}
+              onClick={() => onSelectDate?.(cellDate)}
               className={`flex aspect-square flex-col items-center justify-center rounded-lg border text-xs transition-colors ${
                 isSelected
                   ? "border-brand-blue bg-brand-blue text-white"
