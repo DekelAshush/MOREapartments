@@ -44,8 +44,7 @@ export default async function LocaleLayout({ children, params }: Props) {
     <>
       <SetHtmlAttributes locale={locale} />
       <NextIntlClientProvider messages={messages}>
-        <Header />
-        {children}
+        <Header>{children}</Header>
       </NextIntlClientProvider>
     </>
   );

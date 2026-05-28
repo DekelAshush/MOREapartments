@@ -63,6 +63,7 @@ function PropertyCard({ property }: Props) {
             <ApartmentCard
               key={apartment.id}
               apartment={apartment}
+              propertyId={property.id}
               propertyAddress={address}
             />
           ))}

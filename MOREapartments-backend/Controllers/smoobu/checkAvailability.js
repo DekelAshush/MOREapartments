@@ -1,4 +1,5 @@
 import { checkApartmentAvailability } from "../../Services/smoobuClient.js";
+import { normalizeCurrency } from "../../Services/currency.js";
 import { resolveSmoobuApartmentId } from "../../Services/smoobuMapping.js";
 
 const DATE_PATTERN = /^\d{4}-\d{2}-\d{2}$/;
@@ -24,7 +25,7 @@ function normalizeAvailabilityResponse(smoobuId, data) {
     return {
       available: true,
       price: priceInfo?.price ?? null,
-      currency: priceInfo?.currency ?? null,
+      currency: normalizeCurrency(priceInfo?.currency),
       errorCode: null,
       errorDetails: null,
     };

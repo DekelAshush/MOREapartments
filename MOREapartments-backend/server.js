@@ -3,6 +3,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import { sendMessage } from './Controllers/sendMessage.js';
 import { checkAvailability } from './Controllers/smoobu/checkAvailability.js';
+import { getApartmentRates } from './Controllers/smoobu/getRates.js';
 import { listSmoobuApartments } from './Controllers/smoobu/listApartments.js';
 
 dotenv.config();
@@ -29,6 +30,7 @@ app.post('/api/whatsapp/send', sendMessage);
 
 // Smoobu availability
 app.get('/api/smoobu/availability', checkAvailability);
+app.get('/api/smoobu/rates', getApartmentRates);
 
 if (process.env.NODE_ENV !== 'production') {
   app.get('/api/smoobu/apartments', listSmoobuApartments);

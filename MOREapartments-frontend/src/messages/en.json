@@ -103,7 +103,15 @@
       "402": "Your chosen check-in day is not available.",
       "403": "This booking is too soon — please book further in advance.",
       "404": "More time is required between bookings."
-    }
+    },
+    "viewUnit": "View apartment",
+    "calendarTitle": "Monthly availability",
+    "calendarAvailable": "Available",
+    "calendarUnavailable": "Booked",
+    "calendarLoading": "Loading calendar...",
+    "calendarLoadFailed": "Could not load the calendar right now.",
+    "previousMonth": "Previous month",
+    "nextMonth": "Next month"
   },
   "About": {
     "title": "About Us",

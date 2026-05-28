@@ -1,8 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 import { hasSmoobuMapping } from "@/data/smoobu-apartments";
+import { formatCurrency } from "@/utils/currency";
 
 type AvailabilityResult = {
   available: boolean;
@@ -17,16 +18,23 @@ type AvailabilityResult = {
 
 type Props = {
   apartmentId: string;
+  initialArrivalDate?: string;
 };
 
-function ApartmentAvailability({ apartmentId }: Props) {
+function ApartmentAvailability({ apartmentId, initialArrivalDate = "" }: Props) {
   const t = useTranslations("Properties");
-  const [arrivalDate, setArrivalDate] = useState("");
+  const [arrivalDate, setArrivalDate] = useState(initialArrivalDate);
   const [departureDate, setDepartureDate] = useState("");
   const [guests, setGuests] = useState("2");
   const [loading, setLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState<string | null>(null);
   const [result, setResult] = useState<AvailabilityResult | null>(null);
+
+  useEffect(() => {
+    if (initialArrivalDate) {
+      setArrivalDate(initialArrivalDate);
+    }
+  }, [initialArrivalDate]);
 
   if (!hasSmoobuMapping(apartmentId)) {
     return null;
@@ -146,7 +154,7 @@ function ApartmentAvailability({ apartmentId }: Props) {
                 <p>
                   {t("priceForStay", {
                     price: result.price,
-                    currency: result.currency,
+                    currency: formatCurrency(result.currency),
                   })}
                 </p>
               ) : null}

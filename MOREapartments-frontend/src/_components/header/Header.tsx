@@ -1,5 +1,6 @@
 "use client";
 
+import type { ReactNode } from "react";
 import { useEffect, useState } from "react";
 import { useTranslations, useLocale } from "next-intl";
 import { Link, usePathname } from "@/i18n/navigation";
@@ -19,6 +20,10 @@ const navItems = [
   { href: "/contact", key: "contact" as const, cta: false },
   { href: "/book-now", key: "bookNow" as const, cta: true },
 ];
+
+function isApartmentDetailPath(pathname: string) {
+  return /^\/properties\/[^/]+\/[^/]+$/.test(pathname);
+}
 
 function PageContent({ pathname }: { pathname: string }) {
   switch (pathname) {
@@ -78,7 +83,7 @@ function NavLink({
   );
 }
 
-export default function Header() {
+export default function Header({ children }: { children?: ReactNode }) {
   const t = useTranslations("Navigation");
   const locale = useLocale();
   const pathname = usePathname();
@@ -119,7 +124,7 @@ export default function Header() {
                 key={key}
                 href={href}
                 label={t(key)}
-                isActive={pathname === href}
+                isActive={pathname === href || (href === "/properties" && pathname.startsWith("/properties/"))}
                 isCta={cta}
                 className="px-2 py-1.5 text-xs md:px-3 md:py-2 md:text-base"
               />
@@ -182,7 +187,7 @@ export default function Header() {
                   key={key}
                   href={href}
                   label={t(key)}
-                  isActive={pathname === href}
+                  isActive={pathname === href || (href === "/properties" && pathname.startsWith("/properties/"))}
                   isCta={cta}
                   onNavigate={closeMenu}
                   className="py-3 text-base"
@@ -202,7 +207,7 @@ export default function Header() {
       </header>
 
       <main className="relative z-[1] flex-1 p-8 pb-4">
-        <PageContent pathname={pathname} />
+        {isApartmentDetailPath(pathname) ? children : <PageContent pathname={pathname} />}
         {pathname === "/book-now" ? <WhatsAppContactForm /> : null}
       </main>
 

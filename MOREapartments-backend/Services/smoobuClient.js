@@ -82,3 +82,15 @@ export async function checkApartmentAvailability({
 export async function listApartments() {
   return smoobuFetch("/api/apartments");
 }
+
+export async function getRates({ apartmentIds, startDate, endDate }) {
+  const params = new URLSearchParams();
+  params.set("start_date", startDate);
+  params.set("end_date", endDate);
+
+  for (const apartmentId of apartmentIds) {
+    params.append("apartments[]", String(apartmentId));
+  }
+
+  return smoobuFetch(`/api/rates?${params.toString()}`);
+}
